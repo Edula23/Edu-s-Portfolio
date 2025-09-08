@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite gh-pages"
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
@@ -32,6 +33,7 @@
     "globals": "^16.3.0",
     "tailwindcss": "^4.1.11",
     "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
+    "vite": "^7.0.4",
+    "vite-plugin-gh-pages": "^1.0.1"
   }
 }
