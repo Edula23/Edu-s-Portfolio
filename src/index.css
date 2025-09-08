@@ -1,0 +1,67 @@
+@import "tailwindcss";
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+}
+:hover::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+  border-radius: 20px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  20% {
+    transform: translate(8px) rotate(8deg);
+  }
+  40% {
+    transform: translate(0) rotate(0deg);
+  }
+  60% {
+    transform: translate(-8px) rotate(-8deg);
+  }
+  80% {
+    transform: translate(0) rotate(0deg);
+  }
+  100% {
+    transform: translate(0) rotate(0deg);
+  }
+}
+
+
+@keyframes scroll-down {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 5s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scroll-down 5s linear infinite;
+}
+
+/* New animation classes for dif
+/* Animation classes for merged columns */
+.animate-scroll-up-merged { animation: scroll-up 10s linear infinite; }
+.animate-scroll-down-merged { animation: scroll-down 10s linear infinite; }
+
+.d {
+  border: inset 1px grey;
+}
